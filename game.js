@@ -304,7 +304,7 @@ function startGame() {
     },
   ];
   hikers[0].image.src = "hiking.png";
-  globalSpeedMultiplier = 2.0; // Double the overall speed dynamically
+  globalSpeedMultiplier = 1.0; // Double the overall speed dynamically
 
   mosquitoSound.play().catch((error) => console.error("Error playing buzz sound:", error));
   startTimer();
