@@ -162,7 +162,7 @@ function update() {
       hiker.direction = Math.random() < 0.5 ? 1 : -1; // Randomize direction
       hiker.x = hiker.direction === 1 ? -hiker.size : canvas.width; // Start from left or right
       hiker.y = Math.random() * (canvas.height * 0.8 - hiker.size) + canvas.height * 0.2; // Avoid top 20%
-      hiker.speed = (Math.random() * 1.5 + 0.5); // Double the random speed between 1 and 4
+      hiker.speed = (Math.random()); // Set random speed
     }
   });
 
