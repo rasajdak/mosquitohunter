@@ -14,7 +14,7 @@ let hikers = [
     size: 96, // Scaled to 300% (32 * 3)
     image: new Image(),
     direction: 1,
-    speed: (Math.random() * 1.5 + 0.5), // Double the random speed between 1 and 4
+    speed: (Math.random() * 1), // Set random speed at 1
   },
 ];
 let gameStarted = false;
