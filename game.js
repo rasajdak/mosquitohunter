@@ -162,7 +162,7 @@ function update() {
       hiker.direction = Math.random() < 0.5 ? 1 : -1; // Randomize direction
       hiker.x = hiker.direction === 1 ? -hiker.size : canvas.width; // Start from left or right
       hiker.y = Math.random() * (canvas.height * 0.8 - hiker.size) + canvas.height * 0.2; // Avoid top 20%
-      hiker.speed = (Math.random()); // Set random speed
+      hiker.speed = Math.random(); // Set random speed
     }
   });
 
@@ -174,7 +174,7 @@ function update() {
       size: 96,
       image: new Image(),
       direction: Math.random() < 0.5 ? 1 : -1,
-      speed: (Math.random() * 1.5 + 0.5), // Double the random speed between 1 and 4
+      speed: Math.random(), // Set random speed
     };
     newHiker.image.src = "hiking.png";
     hikers.push(newHiker);
